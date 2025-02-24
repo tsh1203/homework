@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页导航</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideDown 1s ease forwards;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            animation: slideDown 1s ease forwards;
+            animation-delay: 0.05s;
+        }
+
+        .navbar ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .navbar a:hover {
+            background: #50b3a2;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .section h2 {
+            color: #50b3a2;
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            /* Push the footer to the bottom */
+            animation: slideUp 1s ease forwards;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>网页导航</h1>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#社交">社交</a></li>
+                <li><a href="#OI">OI</a></li>
+                <li><a href="#工具">工具</a></li>
+                <li><a href="#游戏">游戏</a></li>
+                <li><a href="#娱乐">娱乐</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Social Section -->
+        <div class="section" id="社交">
+            <h2>社交</h2>
+            <ul>
+                <li><a href="https://nightly.paw.msgbyte.com" target="_blank">南谷(tailchat)</a></li>
+                <li><a href="https://tsh1203.github.io/tsh/" target="_blank"><strong>个人网站</strong>（可能会崩）</a></li>
+                <li><a href="https://github.com/" target="_blank">github</a></li>
+                <li><a href="https://www.luogu.com.cn/user/1485346" target="_blank">洛谷个人中心</a></li>
+            </ul>
+        </div>
+
+        <!-- OI Section -->
+        <div class="section" id="OI">
+            <h2>OI</h2>
+            <ul>
+                <li><a href="https://www.luogu.com.cn" target="_blank">洛谷</a></li>
+                <li><a href="https://nh.51goc.com" target="_blank">南海oj</a></li>
+                <li><a href="https://01.me/files/pubs/%E9%AA%97%E5%88%86%E5%AF%BC%E8%AE%BA.pdf" target="_blank">骗分导论</a></li>
+                <li><a href="http://10.5.42.100/" target="_blank">nsoi(内网)</a></li>
+                <li><a href="https://nsoj.cplus.ac.cn" target="_blank">nsoi(外网)</a></li>
+                <li><a href="https://noi.cn" target="_blank">noi官网</a></li>
+                <li><a href="https://cspsjtest.noi.cn" target="_blank">查分网址</a></li>
+                <li><a href="https://csdn.net" target="_blank">csdn</a></li>
+                <li><a href="https://cnblogs.com" target="_blank">cnblogs</a></li>
+            </ul>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="section" id="工具">
+            <h2>工具</h2>
+            <ul>
+                <li><a href="https://pan.zhengddzz.fun/" target="_blank">zhengddzz网盘（99%会崩）</a></li>
+                <li><a href="https://chat18.aichatosgg.com/#/chat/" target="_blank">chat gpt</a></li>
+                <li><a href="https://wwe.lanzoui.com/iSen921kndgb" target="_blank">小熊猫c++</a></li>
+                <li><a href="https://chinz.lanzout.com/inKON24fbq8h" target="_blank">jiyu trainer(密码：fw1e)</a></li>
+                <li><a href="https://www.luogu.com.cn/paste/ljlr2mpg" target="_blank">洛谷私信轰炸器</a></li>
+                <li><a href="https://chinz.lanzout.com/iskqD2aekh8h" target="_blank">加速器</a></li>
+            </ul>
+        </div>
+
+        <!-- Games Section -->
+        <div class="section" id="游戏">
+            <h2>游戏</h2>
+            <ul>
+                <li><a href="https://www.kiomet.com" target="_blank">kiomet</a></li>
+                <li><a href="https://florr.io" target="_blank">florr</a></li>
+                <li><a href="https://hornex.pro" target="_blank">hornex</a></li>
+                <li><a href="https://flowr.fun" target="_blank">flowr</a></li>
+                <li><a href="https://www.luogu.com/article/qac75gv0" target="_blank">florr突围</a></li>
+            </ul>
+        </div>
+
+        <!-- Entertainment Section -->
+        <div class="section" id="娱乐">
+            <h2>娱乐</h2>
+            <ul>
+                <li><a href="https://www.luogu.com.cn/article/rax2ktnd" target="_blank">少年陈哲</a></li>
+                <li><a href="https://www.cnblogs.com/czhzeta/p/18542250/nsyyds" target="_blank">南谷的往事与未来</a></li>
+                <li><a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4" target="_blank">你被骗了</a>
+                </li>
+                <li><a href="https://www.luogu.com/article/h94h8hy5" target="_blank">神贴合集</a></li>
+                <li><a href="https://official-florrio.fandom.com/wiki/Official_Florr.io_Wiki" target="_blank">florr
+                        wiki</a></li>
+                <li><a href="https://www.luogu.com.cn/article/zjy5ijf3" target="_blank">florr大事寄</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>版权所有 &copy;tsh 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
